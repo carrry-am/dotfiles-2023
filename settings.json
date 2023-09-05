@@ -1,0 +1,61 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  // 基本設定
+  "update.showReleaseNotes": false,
+  "explorer.confirmDelete": false,
+  "files.insertFinalNewline": true,
+  // インデント
+  // デフォルト
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  // "[scss]": {
+  //   "editor.tabSize": 2
+  // },
+  // "[js]": {
+  //   "editor.tabSize": 2
+  // },
+  "editor.fontSize": 13,
+  "editor.fontFamily": "Ricty Diminished",
+  "editor.lineHeight": 18,
+  "editor.renderWhitespace": "boundary", // ホワイトスペースを表示する設定
+  // Welcomeページ非表示
+  "workbench.startupEditor": "newUntitledFile",
+  // 整形
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  // 「settings.json」と「デフォルトのユーザー設定」を2ペインで同時に表示
+  "workbench.settings.useSplitJSON": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // エディタを別タブで開く
+  "workbench.editor.enablePreview": false,
+  // 末尾スペースを削除
+  "files.trimTrailingWhitespace": true,
+
+  // gitlens
+  "gitlens.hovers.currentLine.over": "line",
+
+  "editor.tabCompletion": "onlySnippets",
+  "javascript.suggest.completeFunctionCalls": true,
+  // ミニマップ非表示
+  "editor.minimap.enabled": false,
+  // ターミナルで選択のみでコピー
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 15,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  // "github.copilot.enable": {
+  //   "*": false,
+  //   "plaintext": false,
+  //   "markdown": false,
+  //   "scminput": false
+  // },
+  "security.workspace.trust.untrustedFiles": "open"
+  // "liveServer.settings.donotShowInfoMsg": true
+}
