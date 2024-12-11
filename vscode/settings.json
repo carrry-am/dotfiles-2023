@@ -12,17 +12,28 @@
   // "[js]": {
   //   "editor.tabSize": 2
   // },
-  "editor.fontSize": 11,
-  "editor.fontFamily": "Ricty Diminished",
-  "editor.lineHeight": 18,
+  "editor.fontSize": 10,
+  "editor.fontFamily": "'0xProto','Ricty Diminished'",
+  "editor.lineHeight": 16,
   "editor.renderWhitespace": "boundary", // ホワイトスペースを表示する設定
   // Welcomeページ非表示
   "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+
   // 整形
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  // "editor.formatOnPaste": true,
+  // "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+
   // 「settings.json」と「デフォルトのユhーザー設定」を2ペインで同時に表示
-  "workbench.settings.useSplitJSON": true,
+  // "workbench.settings.useSplitJSON": true,
   "diffEditor.ignoreTrimWhitespace": false,
   // エディタを別タブで開く
   "workbench.editor.enablePreview": false,
@@ -38,15 +49,8 @@
   "editor.minimap.enabled": false,
   // ターミナルで選択のみでコピー
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 12,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "terminal.integrated.fontSize": 10,
+
   "editor.inlineSuggest.enabled": true,
   // "github.copilot.enable": {
   //   "*": false,,
@@ -56,12 +60,12 @@
   // },
   "security.workspace.trust.untrustedFiles": "open",
 
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
+  // // "github.copilot.enable": {
+  // //   "*": true,
+  // //   "plaintext": false,
+  // //   "markdown": false,
+  // //   "scminput": false
+  // // },
 
   // vim
   // "vim.vimrc.enable": true,
@@ -78,6 +82,10 @@
     {
       "before": ["<C-r>"],
       "commands": ["redo"]
+    },
+    {
+      "before": ["<ESC>", "<ESC>"],
+      "commands": [":noh"]
     }
   ],
   "vim.insertModeKeyBindings": [
@@ -86,13 +94,56 @@
       "after": ["<Esc>"]
     }
   ],
-  "deepl.apiKey": "61da7ad5-1dd2-0e0a-0d9f-e5f435b16c77:fx",
-  "explorer.confirmDragAndDrop": false,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  }
+  // "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.visualstar": true,
+  "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
+  "[typescript]": {}
 
   // "liveServer.settings.donotShowInfoMsg": true
-}
 
+  // "[go]": {
+  //   "editor.tabSize": 2, // 公式のサイズは不明。2か4
+  //   "editor.insertSpaces": false, // Go公式はスペースでなくタブ
+  // "editor.formatOnSave": true, // ファイル保存時にフォーマット
+  //   "editor.defaultFormatter": "golang.go" // 変える
+  // }
+
+  // りあクト！ 本
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": "explicit"
+  // },
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "css.validate": false,
+  // "less.validate": false,
+  // "scss.validate": false,
+  // // "editor.codeActionsOnSave": {
+  // //   "source.fixAll.eslint": "explicit",
+  // //   "source.fixAll.stylelint": "explicit"
+  // // },
+  // "editor.formatOnSave": true,
+  // // "eslint.packageManager": "yarn",
+  // "typescript.enablePromptUseWorkspaceTsdk": true,
+  // "typescript.tsdk": "node_modules/typescript/lib"
+  // "[graphql]": {
+  //   "editor.formatOnSave": true
+  // },
+  // "[javascript]": {
+  //   "editor.formatOnSave": true
+  // },
+  // "[javascriptreact]": {
+  //   "editor.formatOnSave": true
+  // },
+  // "[json]": {
+  //   "editor.formatOnSave": true
+  // },
+  // "[typescript]": {
+  //   "editor.formatOnSave": true
+  // },
+  // "[typescriptreact]": {
+  //   "editor.formatOnSave": true
+  // }
+
+  // ts
+}
